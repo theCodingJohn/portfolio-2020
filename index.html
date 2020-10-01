@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="particles-js" class="container"></div>
-    <div id="hero-section" class="hero-background">
+    <div id="home" class="hero-background">
       <div id="hero" class="container">
         <h1>Hey, I'm <span class="john">John</span>.</h1>
         <p>I'm an aspiring web developer.</p>
@@ -30,20 +30,21 @@
       </div>
     </div>
 
-    <div id="second-section">
-      <nav>
-        <div class="row">
-          <div class="col-12">
-            <ul>
-              <a><li>Home</li></a>
-              <a><li>About</li></a>
-              <a><li>Projects</li></a>
-              <a><li>Contact</li></a>
-            </ul>
-          </div>
+    <nav id="main-nav">
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
         </div>
-        <div class="gradient"></div>
-      </nav>
+      </div>
+      <div class="gradient"></div>
+    </nav>
+
+    <div id="second-section">
       <!-- <div id="skills" class="container">
         <h2>About</h2>
       </div> -->
@@ -51,5 +52,6 @@
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
