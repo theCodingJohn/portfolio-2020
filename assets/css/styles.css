@@ -237,6 +237,7 @@ nav li {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
+  transition: 1000ms;
 }
 
 #projects img {
@@ -266,7 +267,7 @@ nav li {
 
 #projects .bg-hover:hover,
 #projects .card_image:hover .bg-hover {
-  opacity: 0.5;
+  opacity: 0.3;
   transition: 500ms;
 }
 
@@ -290,6 +291,11 @@ nav li {
 
 #projects p {
   margin: 15px 0 25px 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
 }
 
 .card {
@@ -319,9 +325,22 @@ nav li {
   font-size: 14px;
 }
 
-.cards_item {
+.button-wrapper {
   display: flex;
-  padding: 1rem;
+  justify-content: space-between;
+}
+
+#projects .button-wrapper a div {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(5, 194, 201);
+}
+
+#projects .button-wrapper a div:hover {
+  transition: 500ms;
+  border-radius: 0;
+  background: rgb(5, 194, 201);
+  color: #252932;
 }
 
 /* Footer */
@@ -372,6 +391,10 @@ nav li {
 
   #skills ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: 1000ms;
+  }
+
+  #projects ul {
     transition: 1000ms;
   }
 }
