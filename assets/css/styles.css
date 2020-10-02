@@ -161,7 +161,7 @@ nav li {
 }
 /* Hero Section */
 #home .container {
-  padding: 0 20px;
+  padding: 0;
 }
 
 #hero {
@@ -170,7 +170,7 @@ nav li {
   justify-content: center;
   text-shadow: 1px 1px 5px rgb(41, 39, 39), -1px -1px 5px rgb(41, 39, 39),
     2px 2px 10px rgb(41, 39, 39), -2px 2px -10px rgb(41, 39, 39);
-  padding: 50px;
+  /* padding: 50px; */
   position: relative;
   transition: 1000s;
 }
@@ -217,7 +217,7 @@ nav li {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
-  margin-top: 15px;
+  margin-top: 20px;
   transition: 1000ms;
 }
 
@@ -229,7 +229,7 @@ nav li {
 }
 
 #skills li i {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 /* Projects */
@@ -289,6 +289,11 @@ nav li {
   margin: 0 0.5em;
 }
 
+#projects p a {
+  text-decoration: underline;
+  color: rgb(5, 194, 201);
+}
+
 #projects p {
   margin: 15px 0 25px 0;
 }
@@ -328,6 +333,10 @@ nav li {
 .button-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+#projects .button-wrapper a {
+  color: rgb(5, 194, 201);
 }
 
 #projects .button-wrapper a div {
@@ -374,6 +383,10 @@ nav li {
     padding: 20px;
     overflow-y: hidden;
     transition: 1000ms;
+  }
+
+  #home .container {
+    padding: 20px;
   }
 
   #hero a {
