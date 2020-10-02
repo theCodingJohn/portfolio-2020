@@ -71,6 +71,7 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: 300ms;
 }
 
 a:hover,
@@ -203,6 +204,33 @@ nav li {
 
 .social-links-wrapper a {
   margin-left: 20px;
+}
+
+.arrow {
+  align-self: center;
+  position: absolute;
+  bottom: 25px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /* About */
@@ -397,6 +425,10 @@ nav li {
 
   #hero a {
     font-size: 1.2em;
+  }
+
+  .arrow {
+    bottom: 80px;
   }
 
   .social-links-wrapper {
