@@ -48,6 +48,10 @@ h2 {
   margin: 28px 0;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p {
   letter-spacing: 0.05em;
   font-size: 16px;
@@ -108,6 +112,7 @@ nav {
   position: sticky;
   top: 0;
   box-shadow: 0px 1px 5px #252932;
+  z-index: 3;
 }
 
 nav .row {
@@ -155,6 +160,10 @@ nav li {
   }
 }
 /* Hero Section */
+#home .container {
+  padding: 0 20px;
+}
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -207,7 +216,6 @@ nav li {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
   list-style-type: none;
   margin-top: 15px;
   transition: 1000ms;
@@ -222,6 +230,98 @@ nav li {
 
 #skills li i {
   font-size: 4.5em;
+}
+
+/* Projects */
+#projects ul {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+#projects img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  transition: 500ms;
+}
+
+#projects .icons-wrapper {
+  position: absolute;
+  transform: scale(0);
+  flex-wrap: no-wrap;
+  opacity: 0;
+  transition: 500ms;
+}
+
+#projects .bg-hover {
+  position: absolute;
+  background-color: rgb(5, 194, 201);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: 500ms;
+}
+
+#projects .bg-hover:hover,
+#projects .card_image:hover .bg-hover {
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+#projects .card_image:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+  transition: 500ms;
+}
+
+#projects .card_image:hover .icons-wrapper {
+  transform: scale(1);
+  opacity: 1;
+  transition: 500ms;
+  z-index: 2;
+}
+
+#projects i {
+  font-size: 2.5em;
+  margin: 0 0.5em;
+}
+
+#projects p {
+  margin: 15px 0 25px 0;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card_content {
+  height: 100%;
+  padding: 20px;
+  background: #252932;
+  border-top: none;
+  line-height: 1.2;
+}
+
+.card_content p {
+  font-size: 14px;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
 }
 
 /* Footer */
@@ -286,6 +386,10 @@ nav li {
     font-size: 20px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   p {
     font-size: 12px;
   }
@@ -297,6 +401,14 @@ nav li {
   #skills ul {
     grid-template-columns: 1fr 1fr 1fr;
     transition: 1000ms;
+  }
+
+  #projects ul {
+    grid-template-columns: 1fr;
+  }
+
+  #projects p {
+    font-size: 12px;
   }
 }
 
