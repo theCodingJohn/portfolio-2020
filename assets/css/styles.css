@@ -44,7 +44,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
+  color: rgb(5, 194, 201);
   margin: 28px 0;
 }
 
@@ -209,6 +210,11 @@ nav li {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+}
+
+#about a {
+  color: rgb(5, 194, 201);
+  text-decoration: underline;
 }
 
 /* Skills */
@@ -408,6 +414,7 @@ nav li {
   }
 
   #projects ul {
+    grid-template-columns: 1fr;
     transition: 1000ms;
   }
 }
@@ -437,10 +444,6 @@ nav li {
   #skills ul {
     grid-template-columns: 1fr 1fr 1fr;
     transition: 1000ms;
-  }
-
-  #projects ul {
-    grid-template-columns: 1fr;
   }
 
   #projects p {
