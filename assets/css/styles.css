@@ -460,21 +460,24 @@ nav li {
 
 @media screen and (max-width: 576px) {
   body {
-    font-size: 12px;
     line-height: 1.2;
   }
 
-  h2 {
-    font-size: 20px;
+  #home {
+    font-size: 12px;
   }
+
+  /* h2 {
+    font-size: 20px;
+  } */
 
   h3 {
     font-size: 18px;
   }
 
-  p {
+  /* p {
     font-size: 12px;
-  }
+  } */
 
   #about .col-8 {
     width: calc(100% / 12 * 12);
@@ -485,13 +488,13 @@ nav li {
     transition: 1000ms;
   }
 
-  #projects p {
+  #projects .card_content p {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 438px) {
-  body {
+  #home {
     font-size: 9px;
   }
 }
