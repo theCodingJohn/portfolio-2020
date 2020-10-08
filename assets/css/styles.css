@@ -394,7 +394,11 @@ nav li {
 }
 
 #skills li i {
-  font-size: 4em;
+  font-size: 3em;
+}
+
+#skills li p {
+  font-size: 14px;
 }
 
 /* Projects */
@@ -631,6 +635,7 @@ nav li {
   }
 
   .arrow {
+    font-size: 24px;
     bottom: 80px;
   }
 
